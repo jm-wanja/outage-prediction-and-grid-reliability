@@ -4,6 +4,8 @@
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 [![Tests](https://github.com/jm-wanja/outage-prediction-grid-reliability/actions/workflows/tests.yml/badge.svg)](https://github.com/jm-wanja/outage-prediction-grid-reliability/actions/workflows/tests.yml)
 
+[![View Dashboard](https://img.shields.io/badge/Dashboard-View%20Now-blue?style=for-the-badge)](https://jm-wanja.github.io/outage-prediction-and-grid-reliability/dashboard.html)
+
 ## 🎯 Project Overview
 
 This project uses historical outage patterns from Kenya Power and Lighting Company (KPLC) to predict system-wide failures and quantify large-scale outage probabilities. The goal is to deliver actionable insights to strengthen grid resilience and inform preventive actions.
