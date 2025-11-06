@@ -54,19 +54,10 @@ plugins:
 
 nav:
   - Home: index.md
-  - Getting Started:
-      - Installation: getting-started/installation.md
-      - Quick Start: getting-started/quickstart.md
-  - User Guide:
-      - Data Loading: user-guide/data-loading.md
-      - Feature Engineering: user-guide/feature-engineering.md
-      - Model Training: user-guide/model-training.md
-      - Visualization: user-guide/visualization.md
-  - API Reference:
-      - Data Module: api/data.md
-      - Models Module: api/models.md
-      - Features Module: api/features.md
-  - Examples:
-      - Notebooks: examples/notebooks.md
-      - Tutorials: examples/tutorials.md
-  - Contributing: contributing.md
+  - Data Pipeline: data_pipeline.md
+  - Model Training: model_training.md
+  - Visualization: visualization.md
+  - Deployment: deployment.md
+  - Tutorials: tutorials.md
+  - API Reference: api.md
+  - FAQ: faq.md
