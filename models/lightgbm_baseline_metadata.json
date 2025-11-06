@@ -1,0 +1,48 @@
+{
+  "model_name": "lightgbm_baseline",
+  "model_type": "LGBMClassifier",
+  "parameters": {
+    "n_estimators": 100,
+    "learning_rate": 0.1,
+    "max_depth": 6,
+    "num_leaves": 31,
+    "min_child_samples": 20,
+    "subsample": 0.8,
+    "colsample_bytree": 0.8,
+    "class_weight": "balanced"
+  },
+  "metrics": {
+    "cv_roc_auc_mean": 0.999788758916998,
+    "cv_roc_auc_std": 0.00015427619610209473,
+    "train_accuracy": 0.9977619532044761,
+    "train_precision": 0.9998395636130274,
+    "train_recall": 0.9966416120262274,
+    "train_f1": 0.9982380265897806,
+    "train_roc_auc": 0.9999640541564371,
+    "train_avg_precision": 0.999979806407693,
+    "val_accuracy": 0.9963384865744508,
+    "val_precision": 0.9993573264781491,
+    "val_recall": 0.9948816378758797,
+    "val_f1": 0.9971144597627445,
+    "val_roc_auc": 0.9999328036257448,
+    "val_avg_precision": 0.9999619987027868
+  },
+  "feature_names": [
+    "dateInSeconds",
+    "year",
+    "day_of_week",
+    "quarter",
+    "day",
+    "day_of_year",
+    "week_of_year",
+    "is_weekend",
+    "cluster_id",
+    "outages_last_7d",
+    "outages_last_30d",
+    "days_since_last_outage",
+    "cluster_outage_rate_7d",
+    "cluster_outage_rate_30d",
+    "season_long_rains",
+    "season_short_rains"
+  ]
+}

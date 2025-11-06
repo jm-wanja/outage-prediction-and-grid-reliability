@@ -1,0 +1,46 @@
+{
+  "model_name": "random_forest_baseline",
+  "model_type": "RandomForestClassifier",
+  "parameters": {
+    "n_estimators": 100,
+    "max_depth": 10,
+    "min_samples_split": 5,
+    "min_samples_leaf": 2,
+    "max_features": "sqrt",
+    "class_weight": "balanced"
+  },
+  "metrics": {
+    "cv_roc_auc_mean": 0.9986734436074223,
+    "cv_roc_auc_std": 0.0006002528756986785,
+    "train_accuracy": 0.9834181078331637,
+    "train_precision": 0.9854910714285714,
+    "train_recall": 0.9884855269470654,
+    "train_f1": 0.9869860279441117,
+    "train_roc_auc": 0.9992023957099977,
+    "train_avg_precision": 0.9995491548808375,
+    "val_accuracy": 0.98413344182262,
+    "val_precision": 0.9847328244274809,
+    "val_recall": 0.9904030710172744,
+    "val_f1": 0.9875598086124402,
+    "val_roc_auc": 0.9990478130797027,
+    "val_avg_precision": 0.9994655363481879
+  },
+  "feature_names": [
+    "dateInSeconds",
+    "year",
+    "day_of_week",
+    "quarter",
+    "day",
+    "day_of_year",
+    "week_of_year",
+    "is_weekend",
+    "cluster_id",
+    "outages_last_7d",
+    "outages_last_30d",
+    "days_since_last_outage",
+    "cluster_outage_rate_7d",
+    "cluster_outage_rate_30d",
+    "season_long_rains",
+    "season_short_rains"
+  ]
+}

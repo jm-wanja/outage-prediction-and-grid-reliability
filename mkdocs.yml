@@ -1,0 +1,72 @@
+site_name: Outage Prediction and Grid Reliability
+site_description: Machine learning project for predicting power outages in Kenya's electrical grid
+site_author: Julie Mugira
+site_url: https://jm-wanja.github.io/outage-prediction-grid-reliability
+
+repo_name: jm-wanja/outage-prediction-grid-reliability
+repo_url: https://github.com/jm-wanja/outage-prediction-grid-reliability
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: blue
+      accent: light blue
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: blue
+      accent: light blue
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.highlight
+    - search.share
+    - content.code.copy
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - toc:
+      permalink: true
+
+plugins:
+  - search
+  - mkdocstrings:
+      default_handler: python
+      handlers:
+        python:
+          options:
+            show_source: true
+
+nav:
+  - Home: index.md
+  - Getting Started:
+      - Installation: getting-started/installation.md
+      - Quick Start: getting-started/quickstart.md
+  - User Guide:
+      - Data Loading: user-guide/data-loading.md
+      - Feature Engineering: user-guide/feature-engineering.md
+      - Model Training: user-guide/model-training.md
+      - Visualization: user-guide/visualization.md
+  - API Reference:
+      - Data Module: api/data.md
+      - Models Module: api/models.md
+      - Features Module: api/features.md
+  - Examples:
+      - Notebooks: examples/notebooks.md
+      - Tutorials: examples/tutorials.md
+  - Contributing: contributing.md

@@ -1,0 +1,319 @@
+{
+  "random_forest_baseline": {
+    "accuracy": 0.5248942401561991,
+    "precision": 0.4985683607730852,
+    "recall": 0.959366391184573,
+    "f1": 0.6561469618464437,
+    "roc_auc": 0.7153306379934163,
+    "avg_precision": 0.7337786086958555,
+    "confusion_matrix": [
+      [
+        220,
+        1401
+      ],
+      [
+        59,
+        1393
+      ]
+    ],
+    "tn": 220,
+    "fp": 1401,
+    "fn": 59,
+    "tp": 1393,
+    "classification_report": {
+      "0": {
+        "precision": 0.7885304659498208,
+        "recall": 0.13571869216533003,
+        "f1-score": 0.23157894736842105,
+        "support": 1621.0
+      },
+      "1": {
+        "precision": 0.4985683607730852,
+        "recall": 0.959366391184573,
+        "f1-score": 0.6561469618464437,
+        "support": 1452.0
+      },
+      "accuracy": 0.5248942401561991,
+      "macro avg": {
+        "precision": 0.643549413361453,
+        "recall": 0.5475425416749515,
+        "f1-score": 0.4438629546074324,
+        "support": 3073.0
+      },
+      "weighted avg": {
+        "precision": 0.6515226635688836,
+        "recall": 0.5248942401561991,
+        "f1-score": 0.4321883704149843,
+        "support": 3073.0
+      }
+    },
+    "feature_importance": {
+      "day_of_year": 0.18906938939715695,
+      "week_of_year": 0.14080647258577234,
+      "dateInSeconds": 0.11857557544784171,
+      "cluster_id": 0.11639831039158188,
+      "day": 0.1028614438431694,
+      "cluster_outage_rate_30d": 0.08528954286527407,
+      "outages_last_30d": 0.07905995200090887,
+      "outages_last_7d": 0.03507799836559902,
+      "cluster_outage_rate_7d": 0.03270867622554597,
+      "day_of_week": 0.023810619120750016,
+      "season_short_rains": 0.01960053298256254,
+      "days_since_last_outage": 0.016074709917736362,
+      "quarter": 0.014411734363600852,
+      "is_weekend": 0.01197885029607064,
+      "season_long_rains": 0.007500508760756789,
+      "year": 0.006775683435672561
+    }
+  },
+  "gradient_boosting_baseline": {
+    "accuracy": 0.5200130165961601,
+    "precision": 0.49551307062036676,
+    "recall": 0.8746556473829201,
+    "f1": 0.6326276463262764,
+    "roc_auc": 0.7830038934575977,
+    "avg_precision": 0.8379352207017967,
+    "confusion_matrix": [
+      [
+        328,
+        1293
+      ],
+      [
+        182,
+        1270
+      ]
+    ],
+    "tn": 328,
+    "fp": 1293,
+    "fn": 182,
+    "tp": 1270,
+    "classification_report": {
+      "0": {
+        "precision": 0.6431372549019608,
+        "recall": 0.202344231955583,
+        "f1-score": 0.30783669638667294,
+        "support": 1621.0
+      },
+      "1": {
+        "precision": 0.49551307062036676,
+        "recall": 0.8746556473829201,
+        "f1-score": 0.6326276463262764,
+        "support": 1452.0
+      },
+      "accuracy": 0.5200130165961601,
+      "macro avg": {
+        "precision": 0.5693251627611637,
+        "recall": 0.5384999396692516,
+        "f1-score": 0.47023217135647466,
+        "support": 3073.0
+      },
+      "weighted avg": {
+        "precision": 0.5733844675355845,
+        "recall": 0.5200130165961601,
+        "f1-score": 0.461301212921754,
+        "support": 3073.0
+      }
+    },
+    "feature_importance": {
+      "day_of_year": 0.28727829468134225,
+      "cluster_id": 0.1568068575584198,
+      "dateInSeconds": 0.15133302096895332,
+      "day": 0.13228139283434806,
+      "cluster_outage_rate_30d": 0.07138293792111436,
+      "week_of_year": 0.05432034978396629,
+      "outages_last_30d": 0.04715148241052845,
+      "outages_last_7d": 0.02299315475374567,
+      "day_of_week": 0.022523366284652888,
+      "cluster_outage_rate_7d": 0.021814902090550925,
+      "days_since_last_outage": 0.016953724202815375,
+      "quarter": 0.004375195858874808,
+      "season_long_rains": 0.004011635941710278,
+      "is_weekend": 0.003971716781973882,
+      "year": 0.002219350722164493,
+      "season_short_rains": 0.0005826172048390103
+    }
+  },
+  "logistic_regression_baseline": {
+    "accuracy": 0.4806378132118451,
+    "precision": 0.4763779527559055,
+    "recall": 1.0,
+    "f1": 0.6453333333333333,
+    "roc_auc": 0.5634840922261707,
+    "avg_precision": 0.5566553799492546,
+    "confusion_matrix": [
+      [
+        25,
+        1596
+      ],
+      [
+        0,
+        1452
+      ]
+    ],
+    "tn": 25,
+    "fp": 1596,
+    "fn": 0,
+    "tp": 1452,
+    "classification_report": {
+      "0": {
+        "precision": 1.0,
+        "recall": 0.015422578655151141,
+        "f1-score": 0.030376670716889428,
+        "support": 1621.0
+      },
+      "1": {
+        "precision": 0.4763779527559055,
+        "recall": 1.0,
+        "f1-score": 0.6453333333333333,
+        "support": 1452.0
+      },
+      "accuracy": 0.4806378132118451,
+      "macro avg": {
+        "precision": 0.7381889763779528,
+        "recall": 0.5077112893275756,
+        "f1-score": 0.3378550020251114,
+        "support": 3073.0
+      },
+      "weighted avg": {
+        "precision": 0.7525873047190286,
+        "recall": 0.4806378132118451,
+        "f1-score": 0.32094519467363414,
+        "support": 3073.0
+      }
+    }
+  },
+  "xgboost_baseline": {
+    "accuracy": 0.5974617637487797,
+    "precision": 0.5424397947098303,
+    "recall": 0.9462809917355371,
+    "f1": 0.689585947302384,
+    "roc_auc": 0.708975940777298,
+    "avg_precision": 0.695244040677653,
+    "confusion_matrix": [
+      [
+        462,
+        1159
+      ],
+      [
+        78,
+        1374
+      ]
+    ],
+    "tn": 462,
+    "fp": 1159,
+    "fn": 78,
+    "tp": 1374,
+    "classification_report": {
+      "0": {
+        "precision": 0.8555555555555555,
+        "recall": 0.2850092535471931,
+        "f1-score": 0.42757982415548357,
+        "support": 1621.0
+      },
+      "1": {
+        "precision": 0.5424397947098303,
+        "recall": 0.9462809917355371,
+        "f1-score": 0.689585947302384,
+        "support": 1452.0
+      },
+      "accuracy": 0.5974617637487797,
+      "macro avg": {
+        "precision": 0.698997675132693,
+        "recall": 0.6156451226413651,
+        "f1-score": 0.5585828857289338,
+        "support": 3073.0
+      },
+      "weighted avg": {
+        "precision": 0.7076075943619359,
+        "recall": 0.5974617637487797,
+        "f1-score": 0.5513783567976246,
+        "support": 3073.0
+      }
+    },
+    "feature_importance": {
+      "week_of_year": 0.1476040482521057,
+      "day_of_year": 0.11443666368722916,
+      "cluster_id": 0.09619118273258209,
+      "cluster_outage_rate_7d": 0.07676225155591965,
+      "season_long_rains": 0.07299210131168365,
+      "season_short_rains": 0.0669390857219696,
+      "year": 0.061710674315690994,
+      "quarter": 0.05826577916741371,
+      "dateInSeconds": 0.053614091128110886,
+      "outages_last_30d": 0.051642946898937225,
+      "day": 0.049528080970048904,
+      "outages_last_7d": 0.04367432743310928,
+      "cluster_outage_rate_30d": 0.03793945908546448,
+      "day_of_week": 0.03769184276461601,
+      "days_since_last_outage": 0.025103429332375526,
+      "is_weekend": 0.005904046818614006
+    }
+  },
+  "lightgbm_baseline": {
+    "accuracy": 0.6072242108688578,
+    "precision": 0.5490588706447738,
+    "recall": 0.9442148760330579,
+    "f1": 0.694353000759686,
+    "roc_auc": 0.7458427015939214,
+    "avg_precision": 0.646183468915956,
+    "confusion_matrix": [
+      [
+        495,
+        1126
+      ],
+      [
+        81,
+        1371
+      ]
+    ],
+    "tn": 495,
+    "fp": 1126,
+    "fn": 81,
+    "tp": 1371,
+    "classification_report": {
+      "0": {
+        "precision": 0.859375,
+        "recall": 0.3053670573719926,
+        "f1-score": 0.45061447428311335,
+        "support": 1621.0
+      },
+      "1": {
+        "precision": 0.5490588706447738,
+        "recall": 0.9442148760330579,
+        "f1-score": 0.694353000759686,
+        "support": 1452.0
+      },
+      "accuracy": 0.6072242108688578,
+      "macro avg": {
+        "precision": 0.7042169353223868,
+        "recall": 0.6247909667025252,
+        "f1-score": 0.5724837375213997,
+        "support": 3073.0
+      },
+      "weighted avg": {
+        "precision": 0.7127498715184548,
+        "recall": 0.6072242108688578,
+        "f1-score": 0.5657815229144129,
+        "support": 3073.0
+      }
+    },
+    "feature_importance": {
+      "day_of_year": 568.0,
+      "dateInSeconds": 552.0,
+      "day": 396.0,
+      "outages_last_30d": 383.0,
+      "cluster_id": 262.0,
+      "outages_last_7d": 259.0,
+      "day_of_week": 161.0,
+      "days_since_last_outage": 129.0,
+      "cluster_outage_rate_30d": 81.0,
+      "week_of_year": 62.0,
+      "quarter": 43.0,
+      "cluster_outage_rate_7d": 37.0,
+      "season_long_rains": 27.0,
+      "year": 11.0,
+      "season_short_rains": 6.0,
+      "is_weekend": 5.0
+    }
+  }
+}

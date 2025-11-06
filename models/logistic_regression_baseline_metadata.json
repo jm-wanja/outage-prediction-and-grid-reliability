@@ -1,0 +1,44 @@
+{
+  "model_name": "logistic_regression_baseline",
+  "model_type": "LogisticRegression",
+  "parameters": {
+    "C": 1.0,
+    "penalty": "l2",
+    "solver": "lbfgs",
+    "class_weight": "balanced"
+  },
+  "metrics": {
+    "cv_roc_auc_mean": 0.5564030221966897,
+    "cv_roc_auc_std": 0.015247046097934624,
+    "train_accuracy": 0.5184130213631739,
+    "train_precision": 0.6497732202721357,
+    "train_recall": 0.5269470654086039,
+    "train_f1": 0.5819498410455669,
+    "train_roc_auc": 0.5562177121713476,
+    "train_avg_precision": 0.6605984432121017,
+    "val_accuracy": 0.5134255492270138,
+    "val_precision": 0.644602048857368,
+    "val_recall": 0.5233525271912988,
+    "val_f1": 0.577683615819209,
+    "val_roc_auc": 0.5476468759047384,
+    "val_avg_precision": 0.6493809717593947
+  },
+  "feature_names": [
+    "dateInSeconds",
+    "year",
+    "day_of_week",
+    "quarter",
+    "day",
+    "day_of_year",
+    "week_of_year",
+    "is_weekend",
+    "cluster_id",
+    "outages_last_7d",
+    "outages_last_30d",
+    "days_since_last_outage",
+    "cluster_outage_rate_7d",
+    "cluster_outage_rate_30d",
+    "season_long_rains",
+    "season_short_rains"
+  ]
+}

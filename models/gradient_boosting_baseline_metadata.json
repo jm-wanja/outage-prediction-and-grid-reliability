@@ -1,0 +1,46 @@
+{
+  "model_name": "gradient_boosting_baseline",
+  "model_type": "GradientBoostingClassifier",
+  "parameters": {
+    "n_estimators": 100,
+    "learning_rate": 0.1,
+    "max_depth": 5,
+    "min_samples_split": 5,
+    "min_samples_leaf": 2,
+    "subsample": 0.8
+  },
+  "metrics": {
+    "cv_roc_auc_mean": 0.999662892590799,
+    "cv_roc_auc_std": 0.00020015947591424735,
+    "train_accuracy": 0.9950152594099695,
+    "train_precision": 0.9944214217405164,
+    "train_recall": 0.9977610746841516,
+    "train_f1": 0.9960884489502674,
+    "train_roc_auc": 0.9999256940397991,
+    "train_avg_precision": 0.9999583301633884,
+    "val_accuracy": 0.9922701383238405,
+    "val_precision": 0.9923469387755102,
+    "val_recall": 0.9955214331413947,
+    "val_f1": 0.9939316512296391,
+    "val_roc_auc": 0.9998498804404937,
+    "val_avg_precision": 0.9999147552326353
+  },
+  "feature_names": [
+    "dateInSeconds",
+    "year",
+    "day_of_week",
+    "quarter",
+    "day",
+    "day_of_year",
+    "week_of_year",
+    "is_weekend",
+    "cluster_id",
+    "outages_last_7d",
+    "outages_last_30d",
+    "days_since_last_outage",
+    "cluster_outage_rate_7d",
+    "cluster_outage_rate_30d",
+    "season_long_rains",
+    "season_short_rains"
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "model_name": "xgboost_baseline",
+  "model_type": "XGBClassifier",
+  "parameters": {
+    "n_estimators": 100,
+    "learning_rate": 0.1,
+    "max_depth": 6,
+    "min_child_weight": 1,
+    "subsample": 0.8,
+    "colsample_bytree": 0.8,
+    "scale_pos_weight": 1
+  },
+  "metrics": {
+    "cv_roc_auc_mean": 0.9997574677188357,
+    "cv_roc_auc_std": 0.0001508896235407087,
+    "train_accuracy": 0.9963377416073245,
+    "train_precision": 0.9998392024441228,
+    "train_recall": 0.994402686710379,
+    "train_f1": 0.9971135343168698,
+    "train_roc_auc": 0.9999524745874286,
+    "train_avg_precision": 0.9999734387153594,
+    "val_accuracy": 0.9938974776240846,
+    "val_precision": 1.0,
+    "val_recall": 0.9904030710172744,
+    "val_f1": 0.9951783992285439,
+    "val_roc_auc": 0.9998806192074402,
+    "val_avg_precision": 0.9999335894596384
+  },
+  "feature_names": [
+    "dateInSeconds",
+    "year",
+    "day_of_week",
+    "quarter",
+    "day",
+    "day_of_year",
+    "week_of_year",
+    "is_weekend",
+    "cluster_id",
+    "outages_last_7d",
+    "outages_last_30d",
+    "days_since_last_outage",
+    "cluster_outage_rate_7d",
+    "cluster_outage_rate_30d",
+    "season_long_rains",
+    "season_short_rains"
+  ]
+}
